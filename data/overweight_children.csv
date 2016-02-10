@@ -1,0 +1,220 @@
+location_name,mean
+Afghanistan,0.19
+Angola,0.182
+Albania,0.298
+Andorra,0.171
+"United Arab Emirates",0.312
+Argentina,0.264
+Armenia,0.236
+"Antigua and Barbuda",0.158
+Australia,0.237
+Austria,0.176
+Azerbaijan,0.24
+Burundi,0.081
+Belgium,0.197
+Benin,0.1
+"Burkina Faso",0.089
+Bangladesh,0.045
+Bulgaria,0.262
+Bahrain,0.245
+"The Bahamas",0.261
+"Bosnia and Herzegovina",0.199
+Belarus,0.164
+Belize,0.227
+Bolivia,0.243
+Brazil,0.232
+Barbados,0.288
+Brunei,0.061
+Bhutan,0.124
+Botswana,0.144
+"Central African Republic",0.107
+Canada,0.238
+Switzerland,0.185
+Chile,0.344
+China,0.188
+"Cote d'Ivoire",0.11
+Cameroon,0.181
+"Democratic Republic of the Congo",0.105
+Congo,0.1
+Colombia,0.168
+Comoros,0.214
+"Cape Verde",0.148
+"Costa Rica",0.29
+Cuba,0.197
+Cyprus,0.241
+"Czech Republic",0.202
+Developing,0.131
+Developed,0.233
+Germany,0.2
+Djibouti,0.162
+Dominica,0.22
+Denmark,0.196
+"Dominican Republic",0.215
+Algeria,0.258
+Ecuador,0.215
+Egypt,0.354
+Eritrea,0.051
+Spain,0.257
+Estonia,0.227
+Ethiopia,0.055
+Finland,0.236
+Fiji,0.187
+France,0.18
+"Federated States of Micronesia",0.45
+Global,0.143
+Gabon,0.167
+"United Kingdom",0.276
+Georgia,0.28
+Ghana,0.084
+Guinea,0.1
+"The Gambia",0.125
+Guinea-Bissau,0.181
+"Equatorial Guinea",0.302
+Greece,0.314
+Grenada,0.163
+Guatemala,0.165
+Guyana,0.165
+Honduras,0.163
+Croatia,0.248
+Haiti,0.086
+Hungary,0.276
+Indonesia,0.08
+India,0.052
+Ireland,0.265
+Iran,0.239
+Iraq,0.222
+Iceland,0.247
+Israel,0.289
+Italy,0.272
+Jamaica,0.221
+Jordan,0.247
+Japan,0.139
+Kazakhstan,0.212
+Kenya,0.113
+Kyrgyzstan,0.194
+Cambodia,0.038
+Kiribati,0.567
+"South Korea",0.173
+Kuwait,0.348
+Laos,0.05
+Lebanon,0.314
+Liberia,0.135
+Libya,0.37
+"Saint Lucia",0.163
+"Sri Lanka",0.069
+Lesotho,0.154
+Lithuania,0.228
+Luxembourg,0.237
+Latvia,0.176
+Morocco,0.242
+Moldova,0.155
+Madagascar,0.059
+Maldives,0.128
+Mexico,0.288
+"Marshall Islands",0.325
+Macedonia,0.23
+Mali,0.116
+Malta,0.296
+Myanmar,0.06
+Montenegro,0.268
+Mongolia,0.172
+Mozambique,0.134
+Mauritania,0.099
+Mauritius,0.224
+Malawi,0.184
+Malaysia,0.208
+Namibia,0.074
+Niger,0.099
+Nigeria,0.126
+Nicaragua,0.19
+Netherlands,0.172
+Norway,0.181
+Nepal,0.043
+"New Zealand",0.292
+Oman,0.33
+Pakistan,0.082
+Panama,0.103
+Peru,0.21
+Philippines,0.055
+"Papua New Guinea",0.171
+Poland,0.199
+"North Korea",0.01
+Portugal,0.279
+Paraguay,0.228
+Palestine,0.292
+Qatar,0.282
+"High-income Asia Pacific",0.15
+"Western Europe",0.231
+"Andean Latin America",0.218
+"Central Latin America",0.236
+"Southern Latin America",0.289
+"Tropical Latin America",0.232
+"North Africa and Middle East",0.25
+"High-income North America",0.288
+Oceania,0.203
+"Central Sub-Saharan Africa",0.124
+"Eastern Sub-Saharan Africa",0.102
+"Central Asia",0.202
+"Southern Sub-Saharan Africa",0.19
+"Western Sub-Saharan Africa",0.116
+"East Asia",0.185
+"South Asia",0.059
+"Southeast Asia",0.079
+Australasia,0.247
+Caribbean,0.166
+"Central Europe",0.208
+"Eastern Europe",0.189
+Romania,0.155
+Russia,0.202
+Rwanda,0.149
+High-income,0.232
+"Central Europe, Eastern Europe, and Central Asia",0.2
+"Sub-Saharan Africa",0.112
+"North Africa and Middle East",0.25
+"South Asia",0.059
+"Southeast Asia, East Asia, and Oceania",0.111
+"Latin America and Caribbean",0.223
+"Saudi Arabia",0.301
+Sudan,0.128
+Senegal,0.06
+Singapore,0.172
+"Solomon Islands",0.384
+"Sierra Leone",0.185
+"El Salvador",0.182
+Somalia,0.088
+Serbia,0.211
+"South Sudan",0.181
+"Sao Tome and Principe",0.155
+Suriname,0.171
+Slovakia,0.171
+Slovenia,0.287
+Sweden,0.198
+Swaziland,0.189
+Seychelles,0.151
+Syria,0.331
+Chad,0.083
+Togo,0.072
+Thailand,0.144
+Tajikistan,0.132
+Turkmenistan,0.228
+Timor-Leste,0.064
+Tonga,0.432
+"Trinidad and Tobago",0.202
+Tunisia,0.205
+Turkey,0.201
+Taiwan,0.218
+Tanzania,0.104
+Uganda,0.101
+Ukraine,0.152
+Uruguay,0.344
+"United States",0.292
+Uzbekistan,0.204
+"Saint Vincent and the Grenadines",0.206
+Venezuela,0.229
+Vietnam,0.056
+Vanuatu,0.186
+Samoa,0.459
+Yemen,0.174
+"South Africa",0.225
+Zambia,0.207
+Zimbabwe,0.118
