@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 10, bottom: 10, left: 200},
+var margin = {top: 20, right: 10, bottom: 10, left: 230},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -33,11 +33,11 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
     .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
 
   bar.append("text")
-  .attr("class", "location_name")
-  .attr("x", margin.left)
-  .attr("y", barHeight / 2)
-  .attr("dy", ".35em")
-  .text(function(d) { return d.location_name; });
+    .attr("class", "location-name")
+    .attr("x", margin.left)
+    .attr("y", barHeight / 2)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.location_name; });
 
   bar.append("rect")
     .attr("transform", function(d, i) { return "translate(" + margin.left + ",0 )"; })
@@ -45,6 +45,7 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
     .attr("height", barHeight - 1);
 
   bar.append("text")
+    .attr("class", "label")
     .attr("x", function(d) { return margin.left + x(d.mean) + 30; })
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
@@ -55,6 +56,33 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
       .attr("transform", "translate(" + margin.left + "," + 20 + ")")
       .call(xAxis);
 });
+
+d3.select("input")
+  .on("click", change);
+
+function change() {
+  d3.csv('data/obese_children.csv', type, function(error, data){
+
+    x.domain([0, d3.max(data, function(d) { return d.mean; })]);
+
+    svg.selectAll("rect")
+      .data(data)
+      .transition()
+      .duration(1500)
+      .attr("width", function(d) { return x(d.mean); });
+
+    svg.selectAll(".label")
+      .data(data)
+      .transition()
+      .duration(1500)
+      .attr("x", function(d) { return margin.left + x(d.mean) + 30; })
+      .text(function(d) { return (d.mean * 100).toFixed(1) + "%"; });
+
+    svg.selectAll(".axis")
+      .transition().duration(1500).ease("sin-in-out")
+      .call(xAxis);
+  });
+}
 
 function type(d) {
   d.mean = +d.mean; // coerce to number

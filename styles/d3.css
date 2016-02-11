@@ -1,8 +1,21 @@
+h1 {
+  text-align: center;
+}
+
 .bar {
+  -webkit-transition: all .2s ease-in;
   fill: steelblue;
 }
 
-.bar text {
+
+.label {
+  -webkit-transition: all .2s ease-in;
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.location-name {
   fill: black;
   font: 10px sans-serif;
   text-anchor: end;
@@ -12,8 +25,8 @@
   fill: red;
 }
 
-.bar:hover, .bar text:active {
-  font-size: 0;
+rect:hover + .label {
+  fill: black;
 }
 
 .axis text {
