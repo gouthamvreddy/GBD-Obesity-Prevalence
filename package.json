@@ -1,0 +1,11 @@
+{
+  "name": "ihme",
+  "version": "1.0.0",
+  "description": "Visualizations of obesity prevelance",
+  "main": "app.js",
+  "author": "Goutham Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
