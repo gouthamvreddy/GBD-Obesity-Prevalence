@@ -17,6 +17,7 @@ var xAxis = d3.svg.axis()
                   .orient("top")
                   .tickFormat(formatPercent);
 
+//Initial state - Metric: Overweight, Sort: Alphabetical
 d3.csv('data/overweight_children.csv', type, function(error, data){
 
   console.log(data);
@@ -34,7 +35,7 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
 
   bar.append("text")
     .attr("class", "location-name")
-    .attr("x", margin.left)
+    .attr("x", margin.left - 3)
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
     .text(function(d) { return d.location_name; });
@@ -53,18 +54,20 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
 
   svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(" + margin.left + "," + 20 + ")")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
       .call(xAxis);
 });
 
-d3.select(".metric")
-  .on("click", change);
+//Change function for changing metric option - obese or overweight
+//  - change length of bars & x-axis based on chosen metric
+function changeMetric() {
+  var file = 'data/overweight_children.csv'; //default file
+  var metric = d3.select("#metric").node().value; //gets selected metric option
 
-d3.select(".sort")
-  .on("click", sortBars);
+  if(metric === 'obese')
+    file = 'data/obese_children.csv';
 
-function change() {
-  d3.csv('data/obese_children.csv', type, function(error, data){
+  d3.csv(file, type, function(error, data){
 
     x.domain([0, d3.max(data, function(d) { return d.mean; })]);
 
@@ -86,16 +89,34 @@ function change() {
       .attr("x", function(d) { return margin.left + x(d.mean) + 30; })
       .text(function(d) { return (d.mean * 100).toFixed(1) + "%"; });
 
+    svg.selectAll(".location-name")
+      .data(data)
+      .transition()
+      .duration(1500)
+      .text(function(d) { return d.location_name; });
+
     svg.selectAll(".axis")
       .transition().duration(1500).ease("sin-in-out")
       .call(xAxis);
+
+    //need to sort also if sort selection is not alphabetical
+    sortBars();
   });
 };
 
+//Sort locations based on option selected in #sort menu & selected metric
+//  ascending - 'asc', descending - 'des', or alphabetical - 'alpha'
 function sortBars() {
+  var sortBy = d3.select("#sort").node().value;
   svg.selectAll(".bar")
      .sort(function(a, b) {
+        if(sortBy === 'asc') {
            return a.mean - b.mean;
+         } else if(sortBy === 'des') {
+           return b.mean - a.mean;
+         } else {
+           return a.location_name.localeCompare(b.location_name); //alphabetical
+         }
      })
      .transition()
      .duration(2000)
@@ -106,3 +127,11 @@ function type(d) {
   d.mean = +d.mean; // coerce to number
   return d;
 };
+
+//Handle metric option selection
+d3.select("#metric")
+  .on("change", changeMetric);
+
+//Handle sort option selection
+d3.select("#sort")
+  .on("change", sortBars);

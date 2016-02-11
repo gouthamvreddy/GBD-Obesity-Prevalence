@@ -9,18 +9,31 @@
   </head>
   <body>
     <h1>Obesity Prevalence - 2013</h1>
-    <div class="btn-toolbar">
+    <nav>
       <div class="col-md-2"></div>
-      <div class="btn-group col-md-2 metric">
-        <button class="btn btn-default active">Overweight</button>
-        <button class="btn btn-default ">Obese</button>
+      <div class="col-md-2">
+        Metric:
+        <select id="metric">
+          <option value="overweight">Overweight</option>
+          <option value="obese">Obese</option>
+        </select>
       </div>
-      <div class="btn-group col-md-2">
-        <button class="btn btn-default active">Children</button>
-        <button class="btn btn-default ">Adults</button>
+      <!-- <div class="col-md-2"> //Still need to implement
+        Age Group:
+        <select id="age">
+          <option value="children">Children</option>
+          <option value="adults">Adults</option>
+        </select>
+      </div> -->
+      <div class="col-md-2">
+        Sort:
+        <select id="sort">
+          <option value="alpha">Alphabetical</option>
+          <option value="asc">Ascending</option>
+          <option value="des">Descending</option>
+        </select>
       </div>
-      <button class="btn btn-default sort">Sort</button>
-    </div>
+    </nav>
     <div id="chart"></div>
     <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="scripts/bar_chart.js"></script>
