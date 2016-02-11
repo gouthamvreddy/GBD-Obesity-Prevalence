@@ -6,7 +6,7 @@
   "author": "Goutham Reddy",
   "license": "ISC",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.13.4"
