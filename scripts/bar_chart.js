@@ -57,13 +57,21 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
       .call(xAxis);
 });
 
-d3.select("input")
+d3.select(".metric")
   .on("click", change);
+
+d3.select(".sort")
+  .on("click", sortBars);
 
 function change() {
   d3.csv('data/obese_children.csv', type, function(error, data){
 
     x.domain([0, d3.max(data, function(d) { return d.mean; })]);
+
+    svg.selectAll(".bar")
+      .data(data)
+      .transition()
+      .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
 
     svg.selectAll("rect")
       .data(data)
@@ -82,9 +90,19 @@ function change() {
       .transition().duration(1500).ease("sin-in-out")
       .call(xAxis);
   });
-}
+};
+
+function sortBars() {
+  svg.selectAll(".bar")
+     .sort(function(a, b) {
+           return a.mean - b.mean;
+     })
+     .transition()
+     .duration(2000)
+     .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
+};
 
 function type(d) {
   d.mean = +d.mean; // coerce to number
   return d;
-}
+};

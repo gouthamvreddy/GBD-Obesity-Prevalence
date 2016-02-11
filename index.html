@@ -2,12 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/bootstrap.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/styles/bootstrap-theme.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/styles/d3.css" media="screen" charset="utf-8">
     <title>Obesity Prevalence</title>
   </head>
   <body>
     <h1>Obesity Prevalence - 2013</h1>
-    <label for="button"><input type="button" value="Obese"></label>
+    <div class="btn-toolbar">
+      <div class="col-md-2"></div>
+      <div class="btn-group col-md-2 metric">
+        <button class="btn btn-default active">Overweight</button>
+        <button class="btn btn-default ">Obese</button>
+      </div>
+      <div class="btn-group col-md-2">
+        <button class="btn btn-default active">Children</button>
+        <button class="btn btn-default ">Adults</button>
+      </div>
+      <button class="btn btn-default sort">Sort</button>
+    </div>
     <div id="chart"></div>
     <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="scripts/bar_chart.js"></script>
