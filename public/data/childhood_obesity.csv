@@ -1,0 +1,435 @@
+location_name,metric,mean
+Afghanistan,obese,0.056
+Afghanistan,overweight,0.19
+Albania,obese,0.121
+Albania,overweight,0.298
+Algeria,obese,0.114
+Algeria,overweight,0.258
+"Andean Latin America",obese,0.04
+"Andean Latin America",overweight,0.218
+Andorra,obese,0.094
+Andorra,overweight,0.171
+Angola,obese,0.059
+Angola,overweight,0.182
+"Antigua and Barbuda",obese,0.056
+"Antigua and Barbuda",overweight,0.158
+Argentina,obese,0.081
+Argentina,overweight,0.264
+Armenia,obese,0.069
+Armenia,overweight,0.236
+Australasia,obese,0.075
+Australasia,overweight,0.247
+Australia,obese,0.071
+Australia,overweight,0.237
+Austria,obese,0.091
+Austria,overweight,0.176
+Azerbaijan,obese,0.081
+Azerbaijan,overweight,0.24
+Bahrain,obese,0.1
+Bahrain,overweight,0.245
+Bangladesh,obese,0.015
+Bangladesh,overweight,0.045
+Barbados,obese,0.117
+Barbados,overweight,0.288
+Belarus,obese,0.04
+Belarus,overweight,0.164
+Belgium,obese,0.044
+Belgium,overweight,0.197
+Belize,obese,0.097
+Belize,overweight,0.227
+Benin,obese,0.04
+Benin,overweight,0.1
+Bhutan,obese,0.058
+Bhutan,overweight,0.124
+Bolivia,obese,0.046
+Bolivia,overweight,0.243
+"Bosnia and Herzegovina",obese,0.108
+"Bosnia and Herzegovina",overweight,0.199
+Botswana,obese,0.045
+Botswana,overweight,0.144
+Brazil,obese,0.072
+Brazil,overweight,0.232
+Brunei,obese,0.013
+Brunei,overweight,0.061
+Bulgaria,obese,0.068
+Bulgaria,overweight,0.262
+"Burkina Faso",obese,0.033
+"Burkina Faso",overweight,0.089
+Burundi,obese,0.016
+Burundi,overweight,0.081
+Cambodia,obese,0.017
+Cambodia,overweight,0.038
+Cameroon,obese,0.042
+Cameroon,overweight,0.181
+Canada,obese,0.094
+Canada,overweight,0.238
+"Cape Verde",obese,0.042
+"Cape Verde",overweight,0.148
+Caribbean,obese,0.055
+Caribbean,overweight,0.166
+"Central African Republic",obese,0.047
+"Central African Republic",overweight,0.107
+"Central Asia",obese,0.064
+"Central Asia",overweight,0.202
+"Central Europe",obese,0.069
+"Central Europe",overweight,0.208
+"Central Europe, Eastern Europe, and Central Asia",obese,0.067
+"Central Europe, Eastern Europe, and Central Asia",overweight,0.2
+"Central Latin America",obese,0.074
+"Central Latin America",overweight,0.236
+"Central Sub-Saharan Africa",obese,0.049
+"Central Sub-Saharan Africa",overweight,0.124
+Chad,obese,0.027
+Chad,overweight,0.083
+Chile,obese,0.121
+Chile,overweight,0.344
+China,obese,0.05
+China,overweight,0.188
+Colombia,obese,0.038
+Colombia,overweight,0.168
+Comoros,obese,0.09
+Comoros,overweight,0.214
+Congo,obese,0.029
+Congo,overweight,0.1
+"Costa Rica",obese,0.095
+"Costa Rica",overweight,0.29
+"Cote d'Ivoire",obese,0.027
+"Cote d'Ivoire",overweight,0.11
+Croatia,obese,0.066
+Croatia,overweight,0.248
+Cuba,obese,0.09
+Cuba,overweight,0.197
+Cyprus,obese,0.077
+Cyprus,overweight,0.241
+"Czech Republic",obese,0.056
+"Czech Republic",overweight,0.202
+"Democratic Republic of the Congo",obese,0.046
+"Democratic Republic of the Congo",overweight,0.105
+Denmark,obese,0.073
+Denmark,overweight,0.196
+Developed,obese,0.083
+Developed,overweight,0.233
+Developing,obese,0.045
+Developing,overweight,0.131
+Djibouti,obese,0.079
+Djibouti,overweight,0.162
+Dominica,obese,0.083
+Dominica,overweight,0.22
+"Dominican Republic",obese,0.058
+"Dominican Republic",overweight,0.215
+"East Asia",obese,0.049
+"East Asia",overweight,0.185
+"Eastern Europe",obese,0.068
+"Eastern Europe",overweight,0.189
+"Eastern Sub-Saharan Africa",obese,0.031
+"Eastern Sub-Saharan Africa",overweight,0.102
+Ecuador,obese,0.038
+Ecuador,overweight,0.215
+Egypt,obese,0.136
+Egypt,overweight,0.354
+"El Salvador",obese,0.044
+"El Salvador",overweight,0.182
+"Equatorial Guinea",obese,0.132
+"Equatorial Guinea",overweight,0.302
+Eritrea,obese,0.017
+Eritrea,overweight,0.051
+Estonia,obese,0.075
+Estonia,overweight,0.227
+Ethiopia,obese,0.019
+Ethiopia,overweight,0.055
+"Federated States of Micronesia",obese,0.231
+"Federated States of Micronesia",overweight,0.45
+Fiji,obese,0.051
+Fiji,overweight,0.187
+Finland,obese,0.079
+Finland,overweight,0.236
+France,obese,0.052
+France,overweight,0.18
+Gabon,obese,0.036
+Gabon,overweight,0.167
+Georgia,obese,0.114
+Georgia,overweight,0.28
+Germany,obese,0.054
+Germany,overweight,0.2
+Ghana,obese,0.024
+Ghana,overweight,0.084
+Global,obese,0.05
+Global,overweight,0.143
+Greece,obese,0.092
+Greece,overweight,0.314
+Grenada,obese,0.058
+Grenada,overweight,0.163
+Guatemala,obese,0.036
+Guatemala,overweight,0.165
+Guinea,obese,0.031
+Guinea,overweight,0.1
+Guinea-Bissau,obese,0.082
+Guinea-Bissau,overweight,0.181
+Guyana,obese,0.064
+Guyana,overweight,0.165
+Haiti,obese,0.02
+Haiti,overweight,0.086
+High-income,obese,0.071
+High-income,overweight,0.232
+"High-income Asia Pacific",obese,0.033
+"High-income Asia Pacific",overweight,0.15
+"High-income North America",obese,0.126
+"High-income North America",overweight,0.288
+Honduras,obese,0.035
+Honduras,overweight,0.163
+Hungary,obese,0.07
+Hungary,overweight,0.276
+Iceland,obese,0.086
+Iceland,overweight,0.247
+India,obese,0.024
+India,overweight,0.052
+Indonesia,obese,0.064
+Indonesia,overweight,0.08
+Iran,obese,0.065
+Iran,overweight,0.239
+Iraq,obese,0.082
+Iraq,overweight,0.222
+Ireland,obese,0.071
+Ireland,overweight,0.265
+Israel,obese,0.126
+Israel,overweight,0.289
+Italy,obese,0.073
+Italy,overweight,0.272
+Jamaica,obese,0.08
+Jamaica,overweight,0.221
+Japan,obese,0.029
+Japan,overweight,0.139
+Jordan,obese,0.08
+Jordan,overweight,0.247
+Kazakhstan,obese,0.066
+Kazakhstan,overweight,0.212
+Kenya,obese,0.028
+Kenya,overweight,0.113
+Kiribati,obese,0.293
+Kiribati,overweight,0.567
+Kuwait,obese,0.2
+Kuwait,overweight,0.348
+Kyrgyzstan,obese,0.045
+Kyrgyzstan,overweight,0.194
+Laos,obese,0.018
+Laos,overweight,0.05
+"Latin America and Caribbean",obese,0.069
+"Latin America and Caribbean",overweight,0.223
+Latvia,obese,0.041
+Latvia,overweight,0.176
+Lebanon,obese,0.142
+Lebanon,overweight,0.314
+Lesotho,obese,0.048
+Lesotho,overweight,0.154
+Liberia,obese,0.039
+Liberia,overweight,0.135
+Libya,obese,0.182
+Libya,overweight,0.37
+Lithuania,obese,0.058
+Lithuania,overweight,0.228
+Luxembourg,obese,0.123
+Luxembourg,overweight,0.237
+Macedonia,obese,0.071
+Macedonia,overweight,0.23
+Madagascar,obese,0.027
+Madagascar,overweight,0.059
+Malawi,obese,0.062
+Malawi,overweight,0.184
+Malaysia,obese,0.08
+Malaysia,overweight,0.208
+Maldives,obese,0.04
+Maldives,overweight,0.128
+Mali,obese,0.038
+Mali,overweight,0.116
+Malta,obese,0.103
+Malta,overweight,0.296
+"Marshall Islands",obese,0.094
+"Marshall Islands",overweight,0.325
+Mauritania,obese,0.033
+Mauritania,overweight,0.099
+Mauritius,obese,0.06
+Mauritius,overweight,0.224
+Mexico,obese,0.101
+Mexico,overweight,0.288
+Moldova,obese,0.054
+Moldova,overweight,0.155
+Mongolia,obese,0.046
+Mongolia,overweight,0.172
+Montenegro,obese,0.089
+Montenegro,overweight,0.268
+Morocco,obese,0.085
+Morocco,overweight,0.242
+Mozambique,obese,0.032
+Mozambique,overweight,0.134
+Myanmar,obese,0.024
+Myanmar,overweight,0.06
+Namibia,obese,0.025
+Namibia,overweight,0.074
+Nepal,obese,0.018
+Nepal,overweight,0.043
+Netherlands,obese,0.04
+Netherlands,overweight,0.172
+"New Zealand",obese,0.094
+"New Zealand",overweight,0.292
+Nicaragua,obese,0.048
+Nicaragua,overweight,0.19
+Niger,obese,0.027
+Niger,overweight,0.099
+Nigeria,obese,0.043
+Nigeria,overweight,0.126
+"North Africa and Middle East",obese,0.092
+"North Africa and Middle East",overweight,0.25
+"North Korea",obese,0.01
+"North Korea",overweight,0.01
+Norway,obese,0.045
+Norway,overweight,0.181
+Oceania,obese,0.053
+Oceania,overweight,0.203
+Oman,obese,0.117
+Oman,overweight,0.33
+Pakistan,obese,0.04
+Pakistan,overweight,0.082
+Palestine,obese,0.122
+Palestine,overweight,0.292
+Panama,obese,0.055
+Panama,overweight,0.103
+"Papua New Guinea",obese,0.034
+"Papua New Guinea",overweight,0.171
+Paraguay,obese,0.065
+Paraguay,overweight,0.228
+Peru,obese,0.039
+Peru,overweight,0.21
+Philippines,obese,0.024
+Philippines,overweight,0.055
+Poland,obese,0.065
+Poland,overweight,0.199
+Portugal,obese,0.097
+Portugal,overweight,0.279
+Qatar,obese,0.174
+Qatar,overweight,0.282
+Romania,obese,0.071
+Romania,overweight,0.155
+Russia,obese,0.07
+Russia,overweight,0.202
+Rwanda,obese,0.038
+Rwanda,overweight,0.149
+"Saint Lucia",obese,0.061
+"Saint Lucia",overweight,0.163
+"Saint Vincent and the Grenadines",obese,0.074
+"Saint Vincent and the Grenadines",overweight,0.206
+Samoa,obese,0.265
+Samoa,overweight,0.459
+"Sao Tome and Principe",obese,0.051
+"Sao Tome and Principe",overweight,0.155
+"Saudi Arabia",obese,0.12
+"Saudi Arabia",overweight,0.301
+Senegal,obese,0.018
+Senegal,overweight,0.06
+Serbia,obese,0.068
+Serbia,overweight,0.211
+Seychelles,obese,0.05
+Seychelles,overweight,0.151
+"Sierra Leone",obese,0.068
+"Sierra Leone",overweight,0.185
+Singapore,obese,0.059
+Singapore,overweight,0.172
+Slovakia,obese,0.055
+Slovakia,overweight,0.171
+Slovenia,obese,0.063
+Slovenia,overweight,0.287
+"Solomon Islands",obese,0.137
+"Solomon Islands",overweight,0.384
+Somalia,obese,0.037
+Somalia,overweight,0.088
+"South Africa",obese,0.083
+"South Africa",overweight,0.225
+"South Asia",obese,0.026
+"South Asia",overweight,0.059
+"South Korea",obese,0.04
+"South Korea",overweight,0.173
+"South Sudan",obese,0.09
+"South Sudan",overweight,0.181
+"Southeast Asia",obese,0.045
+"Southeast Asia",overweight,0.079
+"Southeast Asia, East Asia, and Oceania",obese,0.046
+"Southeast Asia, East Asia, and Oceania",overweight,0.111
+"Southern Latin America",obese,0.095
+"Southern Latin America",overweight,0.289
+"Southern Sub-Saharan Africa",obese,0.065
+"Southern Sub-Saharan Africa",overweight,0.19
+Spain,obese,0.08
+Spain,overweight,0.257
+"Sri Lanka",obese,0.02
+"Sri Lanka",overweight,0.069
+"Sub-Saharan Africa",obese,0.036
+"Sub-Saharan Africa",overweight,0.112
+Sudan,obese,0.057
+Sudan,overweight,0.128
+Suriname,obese,0.058
+Suriname,overweight,0.171
+Swaziland,obese,0.045
+Swaziland,overweight,0.189
+Sweden,obese,0.042
+Sweden,overweight,0.198
+Switzerland,obese,0.06
+Switzerland,overweight,0.185
+Syria,obese,0.146
+Syria,overweight,0.331
+Taiwan,obese,0.06
+Taiwan,overweight,0.218
+Tajikistan,obese,0.051
+Tajikistan,overweight,0.132
+Tanzania,obese,0.021
+Tanzania,overweight,0.104
+Thailand,obese,0.052
+Thailand,overweight,0.144
+"The Bahamas",obese,0.18
+"The Bahamas",overweight,0.261
+"The Gambia",obese,0.049
+"The Gambia",overweight,0.125
+Timor-Leste,obese,0.038
+Timor-Leste,overweight,0.064
+Togo,obese,0.02
+Togo,overweight,0.072
+Tonga,obese,0.11
+Tonga,overweight,0.432
+"Trinidad and Tobago",obese,0.075
+"Trinidad and Tobago",overweight,0.202
+"Tropical Latin America",obese,0.071
+"Tropical Latin America",overweight,0.232
+Tunisia,obese,0.042
+Tunisia,overweight,0.205
+Turkey,obese,0.064
+Turkey,overweight,0.201
+Turkmenistan,obese,0.046
+Turkmenistan,overweight,0.228
+Uganda,obese,0.022
+Uganda,overweight,0.101
+Ukraine,obese,0.069
+Ukraine,overweight,0.152
+"United Arab Emirates",obese,0.124
+"United Arab Emirates",overweight,0.312
+"United Kingdom",obese,0.077
+"United Kingdom",overweight,0.276
+"United States",obese,0.129
+"United States",overweight,0.292
+Uruguay,obese,0.138
+Uruguay,overweight,0.344
+Uzbekistan,obese,0.068
+Uzbekistan,overweight,0.204
+Vanuatu,obese,0.054
+Vanuatu,overweight,0.186
+Venezuela,obese,0.069
+Venezuela,overweight,0.229
+Vietnam,obese,0.025
+Vietnam,overweight,0.056
+"Western Europe",obese,0.068
+"Western Europe",overweight,0.231
+"Western Sub-Saharan Africa",obese,0.038
+"Western Sub-Saharan Africa",overweight,0.116
+Yemen,obese,0.05
+Yemen,overweight,0.174
+Zambia,obese,0.091
+Zambia,overweight,0.207
+Zimbabwe,obese,0.028
+Zimbabwe,overweight,0.118
