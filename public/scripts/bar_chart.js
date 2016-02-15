@@ -17,10 +17,17 @@ var xAxis = d3.svg.axis()
                   .orient("top")
                   .tickFormat(formatPercent);
 
-//Initial state - Metric: Overweight, Sort: Alphabetical
-d3.csv('data/overweight_children.csv', type, function(error, data){
+var obesityData;
 
-  console.log(data);
+//Initial state - Metric: Overweight, Sort: Alphabetical
+d3.csv('data/childhood_obesity.csv', type, function(error, csv){
+
+  obesityData = csv;
+  initialGraph();
+});
+
+function initialGraph(){
+  var data = obesityData.filter(function(value){ return value.metric === 'overweight'; });
 
   svg.attr("height", barHeight * data.length + margin.top * 2);
 
@@ -30,7 +37,6 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
     .data(data)
     .enter().append("g")
     .attr("class", "bar")
-  //  .attr("cx", 0)
     .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
 
   bar.append("text")
@@ -56,52 +62,48 @@ d3.csv('data/overweight_children.csv', type, function(error, data){
       .attr("class", "x axis")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
       .call(xAxis);
-});
+};
 
 //Change function for changing metric option - obese or overweight
 //  - change length of bars & x-axis based on chosen metric
 function changeMetric() {
-  var file = 'data/overweight_children.csv'; //default file
+
   var metric = d3.select("#metric").node().value; //gets selected metric option
+  var data = obesityData.filter(function(value){ return value.metric === metric; });
 
-  if(metric === 'obese')
-    file = 'data/obese_children.csv';
+  x.domain([0, d3.max(data, function(d) { return d.mean; })]);
 
-  d3.csv(file, type, function(error, data){
+  svg.selectAll(".bar")
+    .data(data)
+    .transition()
+    .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
 
-    x.domain([0, d3.max(data, function(d) { return d.mean; })]);
+  svg.selectAll("rect")
+    .data(data)
+    .transition()
+    .duration(1500)
+    .attr("width", function(d) { return x(d.mean); });
 
-    svg.selectAll(".bar")
-      .data(data)
-      .transition()
-      .attr("transform", function(d, i) { return "translate(0," + (i * barHeight + margin.top * 2) + ")"; });
+  svg.selectAll(".label")
+    .data(data)
+    .transition()
+    .duration(1500)
+    .attr("x", function(d) { return margin.left + x(d.mean) + 30; })
+    .text(function(d) { return (d.mean * 100).toFixed(1) + "%"; });
 
-    svg.selectAll("rect")
-      .data(data)
-      .transition()
-      .duration(1500)
-      .attr("width", function(d) { return x(d.mean); });
+  svg.selectAll(".location-name")
+    .data(data)
+    .transition()
+    .duration(1500)
+    .text(function(d) { return d.location_name; });
 
-    svg.selectAll(".label")
-      .data(data)
-      .transition()
-      .duration(1500)
-      .attr("x", function(d) { return margin.left + x(d.mean) + 30; })
-      .text(function(d) { return (d.mean * 100).toFixed(1) + "%"; });
+  svg.selectAll(".axis")
+    .transition().duration(1500).ease("sin-in-out")
+    .call(xAxis);
 
-    svg.selectAll(".location-name")
-      .data(data)
-      .transition()
-      .duration(1500)
-      .text(function(d) { return d.location_name; });
+  //need to sort also if sort selection is not alphabetical
+  sortBars();
 
-    svg.selectAll(".axis")
-      .transition().duration(1500).ease("sin-in-out")
-      .call(xAxis);
-
-    //need to sort also if sort selection is not alphabetical
-    sortBars();
-  });
 };
 
 //Sort locations based on option selected in #sort menu & selected metric
